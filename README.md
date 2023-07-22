@@ -23,10 +23,6 @@ Summarized line graph visualization technique  is designed speciﬁcally for dat
 insights from the dataset, to ensure it is clear how the insights are extracted, and to minimize the loss of important discoveries during the exploration. This component should be designed to address the speciﬁc insights of interest to the decision-makers.
 + **Data Envelope:** The Data Envelope summarizes the remaining aggregated data to put the ﬁrst two components into context and, therefore, aids the users in identifying possible information bias. It should provide simple yet specific details of the raw data that are not included in the representative data.
 
-* representative data that provides a quick takeaway of the full dataset
-* analytical highlights that distinguish speciﬁc insights of interest
-* a data envelope that summarizes the remaining aggregated data
-
 For more information about the summarized line graph check the below paper:
 
 [Paper](https://scholar.google.com/scholar_url?url=https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.13696%3Fcasa_token%3DPi1eQ3McmIIAAAAA:tZn1dlHw5hBAObQ_QmWRFTwUFmWdzvAa4HALXz9dtgRIz3_5yvhM1oPTZwQN7MOb9PP4iG5LvAE3txMa&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=16796700672237661042&ei=2Nu6ZL_OBsr2mgHS_argBg&scisig=ABFrs3yvrJgCIaarBpMjCCnEPgOa)
@@ -43,18 +39,18 @@ Additionaly data enevelope provides the monthly sales for each stores. and this 
 
 ### Details of the visualization
 
+![Summaried Line Graph for the store dataset](/images/line_graph_main.JPG)
 
+**Representative Data**
 
-Screenshot of the whole visualization
+The summarized line graph uses mean as the representative data. The mean, which represents the central tendency of the entire dataset, offers measurable values that change over time and are easily grasped by casual users.
 
-Explain the red line for overall trend
+In the above figure (i.e our visualization), the *brown* line represents the monthly mean sales of all the stores. This represents the overall trend of sales in our dataset. It helps the users to gain a simple but precise description of the dataset and it is easy for them to understand without any specific additional training.
 
-Explain the data envelope for each store
+**Analytical Highlights**
 
-Key insights 
+For each store/time series, we have plot the month in which they have the maximum sale as a downward-pointing triangle in blue and the month in which they had the minimum sale as upward-pointing triangles in red. Additionally, triangles are  with store name and are aligned to the mean curve using the vertical dotted lines for better time point measurment and comparison.
 
-December is worth more investigation as 4 out of 10 stores have December as their highest selling month
+**Data Envelope**
 
-Interacation
-
-Explain how it will help the end-user
+Data envelope provides additional information not presented in representative data and analytical highlights in a simplified and contextual manner. Data envelope adds density bands between mean and each of the original lines to visualize the distribution of the time-series. Additionally by examining the density bands and the mean in the same graph, users can examine the distribution of time-series above and below the mean.
