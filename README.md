@@ -2,12 +2,12 @@
 
 ### Steps to replicate the visualization locally:
 
-Requirements: Python (to start the dummy server) TODO: Check chatgpt for more description
+Requirements: Python (to run a simple HTTP server using the Python's built-in 'http.server' module). Other required javascript libraries are included in the assets folder.
 
 * Clone this repository
 * Change directory to the folder where this repository was cloned
 * Run the below command: python -m http.server 8000
-* Open the browser and type localhost:8000
+* Now to access the visualization by navigating to *http://localhost:8000* in your web browser.
 
 
 ### Communication-minded Visualizations
@@ -54,3 +54,8 @@ For each store/time series, we have plot the month in which they have the maximu
 **Data Envelope**
 
 Data envelope provides additional information not presented in representative data and analytical highlights in a simplified and contextual manner. Data envelope adds density bands between mean and each of the original lines to visualize the distribution of the time-series. Additionally by examining the density bands and the mean in the same graph, users can examine the distribution of time-series above and below the mean.
+
+### Acknowledgment
+
+This visualization is developed based on the below research work:
+[Bridging the Data Analysis Communication Gap Utilizing a Three-Component Summarized Line Graph](https://scholar.google.com/scholar_url?url=https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.13696%3Fcasa_token%3DPi1eQ3McmIIAAAAA:tZn1dlHw5hBAObQ_QmWRFTwUFmWdzvAa4HALXz9dtgRIz3_5yvhM1oPTZwQN7MOb9PP4iG5LvAE3txMa&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=16796700672237661042&ei=2Nu6ZL_OBsr2mgHS_argBg&scisig=ABFrs3yvrJgCIaarBpMjCCnEPgOa)
